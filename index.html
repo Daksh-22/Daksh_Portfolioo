@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -59,10 +60,11 @@
     <nav class="fixed w-full z-50 top-0 px-4 md:px-6 py-4 flex justify-center">
         <div class="w-full max-w-screen-2xl flex justify-between items-center glass rounded-full px-6 py-2.5">
             <div class="text-sm md:text-base font-bold tracking-tight uppercase">Daksh Jain<span class="text-deloitte">.</span></div>
-            <div class="hidden md:flex space-x-8 text-[9px] uppercase tracking-widest font-bold text-gray-500">
+            <div class="hidden md:flex space-x-6 text-[9px] uppercase tracking-widest font-bold text-gray-500">
                 <a href="#about" class="hover:text-white transition">About</a>
                 <a href="#experience" class="hover:text-white transition">Experience</a>
                 <a href="#research" class="hover:text-white transition">Research</a>
+                <a href="#case-studies" class="hover:text-white transition">Case Studies</a>
                 <a href="#ecosystem" class="hover:text-white transition">Stack</a>
             </div>
             <a href="#contact" class="px-5 py-1.5 rounded-full bg-white text-black text-[9px] uppercase font-bold hover:bg-deloitte hover:text-white transition shadow-sm">Contact</a>
@@ -135,12 +137,26 @@
                 <!-- Deloitte -->
                 <div class="reveal p-6 rounded-xl glass border-l-2 border-l-deloitte card-hover">
                     <div class="flex flex-col md:flex-row justify-between mb-3">
-                        <h3 class="text-base font-bold text-white uppercase tracking-tight">Analyst (Customer Sales & Service)</h3>
-                        <span class="text-[9px] font-bold text-deloitte uppercase tracking-widest mt-2 md:mt-0">Deloitte India • Incoming Jan 2026</span>
+                        <h3 class="text-base font-bold text-white uppercase tracking-tight">Analyst (Technology & Transformation)</h3>
+                        <span class="text-[9px] font-bold text-deloitte uppercase tracking-widest mt-2 md:mt-0">Deloitte India • Jan 2026 – June 2026</span>
                     </div>
                     <p class="text-gray-400 text-xs leading-relaxed max-w-4xl">
-                        Joining the Technology & Transformation division. Focused on Salesforce configuration, custom development, and business process optimization.
+                        Joining the Customer Sales & Service practice. Focused on Salesforce configuration, custom development (Apex/LWC), and enterprise-scale business process optimization.
                     </p>
+                </div>
+
+                <!-- Usurp Tech -->
+                <div class="reveal p-6 rounded-xl glass card-hover w-full">
+                    <div class="flex flex-col md:flex-row justify-between mb-3">
+                        <h3 class="text-base font-bold text-white uppercase tracking-tight">Business Development Executive</h3>
+                        <span class="text-[9px] font-bold text-gray-500 uppercase tracking-widest mt-2 md:mt-0">Usurp Tech • Sep 2025 – Dec 2025</span>
+                    </div>
+                    <p class="text-[10px] text-deloitte font-bold uppercase tracking-widest mb-3">Founder's Office</p>
+                    <ul class="text-gray-400 text-xs space-y-2 pl-4 list-disc marker:text-deloitte">
+                        <li>Drove B2B discovery across construction/architecture, conducting 25+ prospect interviews to map Top-of-Funnel (TOF) friction.</li>
+                        <li>Executed outreach across 250+ accounts, generating a high-intent sales pipeline of 12+ leads and accelerating engagement workflows.</li>
+                        <li>Partnered with the creative team on AI-driven content, reducing outbound asset Turn-Around-Time (TAT) by 35% and standardizing 15+ messaging sequences.</li>
+                    </ul>
                 </div>
 
                 <!-- Board Easy -->
@@ -191,9 +207,41 @@
         </div>
     </section>
 
-    <!-- Technical Stack -->
-    <section id="ecosystem" class="relative z-10">
+    <!-- Case Studies -->
+    <section id="case-studies" class="relative z-10">
         <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-10">
+                <h2 class="text-sm font-bold uppercase tracking-widest text-white whitespace-nowrap">Case Studies</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6">
+                <a href="https://www.linkedin.com/posts/daksh-jain-3b701322a_daksh-growws-teardown-ugcPost-7463177253884141568-ugJs/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlPh3sBwhV908UVsYIBk39TVOs1WcNV1Bo" target="_blank" class="reveal p-8 rounded-xl glass card-hover block group">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                        <div>
+                            <p class="text-[8px] font-bold text-deloitte uppercase mb-2 tracking-widest">Product Teardown</p>
+                            <h3 class="text-lg font-bold text-white uppercase tracking-tight group-hover:text-deloitte transition">Groww Screener Adoption</h3>
+                        </div>
+                        <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest mt-4 md:mt-0 border border-white/10 px-4 py-1.5 rounded-full group-hover:bg-white/5 group-hover:text-white transition">Read Case Study <i class="fas fa-external-link-alt ml-1"></i></span>
+                    </div>
+                    <ul class="text-gray-400 text-xs leading-relaxed space-y-3 pl-4 list-disc marker:text-deloitte">
+                        <li>Audited Groww's intraday screener, identifying UI/UX friction points like technical jargon and poor discoverability affecting a target segment of ~29.7L active users[cite: 4].</li>
+                        <li>Designed <strong>"Thesis"</strong>, a methodology layer with curated, plain-English templates aimed at transitioning passive investors into active traders[cite: 4].</li>
+                        <li>Created a 12-week validation roadmap incorporating user surveys and A/B testing, targeting an 18% template save rate and 1.5% Thesis MAU[cite: 4].</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Stack -->
+    <section id="ecosystem" class="relative z-10 bg-[#070707]">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-10">
+                <h2 class="text-sm font-bold uppercase tracking-widest text-white whitespace-nowrap">Stack & Builds</h2>
+                <div class="section-line"></div>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="reveal p-6 rounded-xl glass card-hover">
                     <h3 class="text-[9px] font-bold uppercase text-gray-500 mb-4 tracking-widest">Languages & Tools</h3>
@@ -224,7 +272,7 @@
     </section>
 
     <!-- Leadership -->
-    <section id="leadership" class="relative z-10 bg-[#070707]">
+    <section id="leadership" class="relative z-10">
         <div class="max-w-screen-2xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-10">
                 <h2 class="text-sm font-bold uppercase tracking-widest text-white whitespace-nowrap">Leadership</h2>
@@ -247,7 +295,7 @@
     </section>
 
     <!-- Contact -->
-    <footer id="contact" class="py-12 px-6 text-center border-t border-white/5 relative z-10">
+    <footer id="contact" class="py-12 px-6 text-center border-t border-white/5 relative z-10 bg-[#070707]">
         <div class="max-w-screen-2xl mx-auto">
             <h2 class="text-2xl font-extrabold mb-8 tracking-tighter text-white">Get in touch.</h2>
             <div class="flex flex-wrap justify-center gap-8 mb-10 text-[9px] font-bold uppercase tracking-[0.2em] text-gray-500">
@@ -255,7 +303,7 @@
                 <a href="https://linkedin.com/in/daksh-jain-3b701322a" target="_blank" class="hover:text-deloitte transition">LinkedIn</a>
                 <a href="https://github.com/Daksh-22" target="_blank" class="hover:text-deloitte transition">GitHub</a>
             </div>
-            <p class="text-gray-700 text-[7px] font-bold uppercase tracking-[0.5em]">Daksh Jain © 2026 — Analyst @ Deloitte India Digital</p>
+            <p class="text-gray-700 text-[7px] font-bold uppercase tracking-[0.5em]">Daksh Jain © 2026</p>
         </div>
     </footer>
 
@@ -271,3 +319,5 @@
     </script>
 </body>
 </html>
+
+```
