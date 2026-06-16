@@ -1,79 +1,49 @@
-# Daksh Jain · Portfolio
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Daksh Jain, applied AI, product and engineering">
+  <defs>
+    <clipPath id="card"><rect x="8" y="8" width="1184" height="364" rx="26"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141619"/>
+      <stop offset="0.5" stop-color="#0e1013"/>
+      <stop offset="1" stop-color="#0b0c0e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.18" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
 
-Personal portfolio of Daksh Jain, an applied AI and data engineer who thinks in products. The whole site is one page in a single file, with no build step and nothing to install.
+  <g clip-path="url(#card)">
+    <rect x="8" y="8" width="1184" height="364" fill="url(#bg)"/>
+    <rect x="8" y="8" width="1184" height="364" fill="url(#glow)"/>
+    <g stroke="#ffffff" stroke-opacity="0.045" stroke-width="1">
+      <line x1="120" y1="8" x2="120" y2="372"/>
+      <line x1="280" y1="8" x2="280" y2="372"/>
+      <line x1="440" y1="8" x2="440" y2="372"/>
+      <line x1="600" y1="8" x2="600" y2="372"/>
+      <line x1="760" y1="8" x2="760" y2="372"/>
+      <line x1="920" y1="8" x2="920" y2="372"/>
+      <line x1="1080" y1="8" x2="1080" y2="372"/>
+      <line x1="8" y1="110" x2="1192" y2="110"/>
+      <line x1="8" y1="200" x2="1192" y2="200"/>
+      <line x1="8" y1="290" x2="1192" y2="290"/>
+    </g>
+  </g>
 
-**Live:** add your deployed URL here
+  <rect x="8.5" y="8.5" width="1183" height="363" rx="25.5" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
 
-## What this is
+  <text x="70" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="74" font-weight="800" letter-spacing="-2" fill="#F5F5F7">Daksh Jain</text>
+  <text x="73" y="200" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="5" fill="#A1A1A6">APPLIED AI · PRODUCT · ENGINEERING</text>
+  <line x1="73" y1="230" x2="470" y2="230" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="73" y="300" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" letter-spacing="2.5" fill="#5C5F66">SINGLE PAGE · ONE FILE · NO BUILD</text>
 
-A fast, self contained portfolio that leads with proof. The hero is an interactive 3D teardown, the product work is rebuilt as native graphics rather than screenshots, and the engineering and research are shown with the numbers attached. The visual language is deliberately restrained: a near black canvas, off white type, glass panels, and the only color on the page is live market data.
-
-## Highlights
-
-* **The Unsolvable State.** An interactive Three.js hero. A broken product cube that you can spin, with two corners flagged as faults. Tear it down, patch the technical debt, and watch it reassemble into a clean, fixed core. It degrades gracefully to a short text version when WebGL is unavailable.
-* **Glass design system.** Monochrome and material led, in the spirit of a premium product page. Color carries meaning, never decoration.
-* **Real product work, shown big.** A Groww screener teardown rebuilt as native graphics (the investor staircase, the five fix audit, the kill gated metrics) and an INDmoney design study with the rationale called out.
-* **Engineering and research.** Parley, a realtime chat with semantic memory over a vector database, plus two peer reviewed ML papers.
-* **Accessible by default.** Meets WCAG AA contrast, respects the reduced motion preference, and stays fully readable with JavaScript turned off.
-
-## What's inside the page
-
-Engineering, product work, published research, experience, skills, leadership, and contact, in that order.
-
-## Built with
-
-* Plain HTML, CSS, and JavaScript. No framework, no bundler, no dependencies to install.
-* Three.js, loaded from a CDN at runtime, for the hero teardown.
-* Google Fonts: Schibsted Grotesk for type and JetBrains Mono for labels and the terminal.
-* The one image on the page is embedded directly as base64, so `index.html` is fully self contained.
-
-## Project structure
-
-It is intentionally a single file.
-
-```
-index.html      the entire site: markup, styles, scripts, and the embedded image
-README.md       this file
-```
-
-## Run it locally
-
-The simplest way is to open `index.html` in a browser.
-
-To serve it locally so the fonts and Three.js load cleanly:
-
-```
-git clone https://github.com/Daksh-22/<repo>.git
-cd <repo>
-python3 -m http.server 8000
-```
-
-Then open `http://localhost:8000`. There is nothing to build and no packages to fetch.
-
-## Deploy
-
-It is a static site, so any static host works. Place `index.html` at the root and point the host at it.
-
-* **GitHub Pages:** push to the repo and enable Pages on the branch.
-* **Vercel or Netlify:** import the repo, leave the build command empty, and serve from the root.
-
-The image is embedded, so the file ships on its own. If this URL is already on your job applications, keep it stable when you redeploy.
-
-## Design and accessibility notes
-
-* The page is monochrome by choice. The only chromatic color is market data, green for up and red for down.
-* Color is never the only signal. Gains and losses also carry a sign, and the cube faults carry a written label.
-* Motion is calm and purposeful, and it scales down for anyone who prefers reduced motion.
-* A `noscript` fallback reveals all content and the hero falls back to a short text summary when scripts are disabled.
-
-## Contact
-
-* Email: dakshjain311@gmail.com
-* LinkedIn: linkedin.com/in/daksh-jain-3b701322a
-* GitHub: github.com/Daksh-22
-
-## Usage
-
-The code is here to read and learn from. The writing, case studies, and personal content are mine, so please do not republish them as your own.
-
-© 2026 Daksh Jain
+  <g stroke="#F5F5F7" stroke-opacity="0.24" stroke-width="1.6" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M980,98 L900.3,144 L900.3,236 L980,282 L1059.7,236 L1059.7,144 Z"/>
+    <path d="M980,190 L980,98"/>
+    <path d="M980,190 L900.3,236"/>
+    <path d="M980,190 L1059.7,236"/>
+  </g>
+  <circle cx="1059.7" cy="144" r="18" fill="#FF453A" fill-opacity="0.16"/>
+  <circle cx="1059.7" cy="144" r="6" fill="#FF453A"/>
+  <circle cx="900.3" cy="144" r="18" fill="#30D158" fill-opacity="0.16"/>
+  <circle cx="900.3" cy="144" r="6" fill="#30D158"/>
+</svg>
